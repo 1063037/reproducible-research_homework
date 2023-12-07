@@ -15,7 +15,11 @@ A random seed is an identifier (usually a number, or some other string of charac
 
 c.
 
-See "random_walk.R" in "question_4_code" folder
+See "random_walk.R" in "question-4-code" folder
+
+d.
+
+
 
 
 
