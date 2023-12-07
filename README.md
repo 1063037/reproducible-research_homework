@@ -1,6 +1,13 @@
 # Reproducible research: version control and R
 
-\# INSERT ANSWERS HERE #
+## Answers
+### Q1, 2, 3
+link
+
+### Q4
+a.
+
+The script creates a function called "random_walk", which creates a dataframe with x and y coordinates, and time steps. The first step begins at 0,0 when t=1. For each subsequent step, a random angle is generated, which is used to determine the coordinates of the next step by moving from the previous step a distance of 0.25 units at this angle (and with sin/cos of the angle being used with 0.25 as a hypotenuse to calculate the value of the new coordinates). The object data1 is created using this function to simulate a random walk of 500 steps, as is data2. Plot
 
 ## Instructions
 
