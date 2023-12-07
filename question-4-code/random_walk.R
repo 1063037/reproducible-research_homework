@@ -1,10 +1,15 @@
+#Install packages if necessary
 #install.packages("ggplot2")
 #install.packages("gridExtra")
 
+#Library the required packages
 library(ggplot2)
 library(gridExtra)
 
+#Define the random walk function. The function "set.seed(42)" on line 14 will ensure the randomness is reproducible
 random_walk  <- function (n_steps) {
+
+  set.seed(42)
   
   df <- data.frame(x = rep(NA, n_steps), y = rep(NA, n_steps), time = 1:n_steps)
   
@@ -28,8 +33,10 @@ random_walk  <- function (n_steps) {
   
 }
 
+#Generate a random walk
 data1 <- random_walk(500)
 
+#Produce a plot of this random walk
 plot1 <- ggplot(aes(x = x, y = y), data = data1) +
   
   geom_path(aes(colour = time)) +
@@ -40,8 +47,10 @@ plot1 <- ggplot(aes(x = x, y = y), data = data1) +
   
   ylab("y-coordinate")
 
+#Generate another random walk
 data2 <- random_walk(500)
 
+#Plot this second random walk
 plot2 <- ggplot(aes(x = x, y = y), data = data2) +
   
   geom_path(aes(colour = time)) +
@@ -52,4 +61,5 @@ plot2 <- ggplot(aes(x = x, y = y), data = data2) +
   
   ylab("y-coordinate")
 
+#Visualise the two random walks together
 grid.arrange(plot1, plot2, ncol=2)
