@@ -74,6 +74,10 @@ V = 1181.807*300^1.5152
 V = 6697005.925 nm^3
 
 
+### Bonus
+
+Reproducibility refers to the ability of code (or other methods of analysis) to yield the same results when repeated on the same data. However, replicability refers to the the same analysis repeated on different data yielding the same results. Github can enhance reproducibility via version control by ensuring that all users of code are able to keep up to date with any changes made and use the same version. Github also improves transparency, as changes can be tracked over time - this improves replicability as it means users can ensure that code used to analyse multiple sets of data are being used consistently.
+
 
 ## Instructions
 
