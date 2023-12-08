@@ -28,8 +28,52 @@ Could not fit the entire edit in one screenshot so it is in two images:
 
 
 ### Q5
+a.
 
+There are 33 rows and 13 columns in the table.
 
+b.
+
+A log transformation makes the data linear when at low values of genome length (L). See R-script "Q5_script.R".
+
+c.
+
+Model gives intercept of 7.0748, and slope of 1.5152. p-value of the intercept was 2.28e-10, and the p-value of the slope was 6.44e-10. These are both statistically significant.
+
+As V = (scaling factor) * L^(exponent),
+
+log(V) = log((scaling factor) + log(L^(exponent)),
+
+log(V) = log(scaling factor) + exponent*log(L)
+
+Therefore, the intercept of the linear model = log(scaling factor)
+
+So scaling factor = exp(intercept) = exp(7.0748) = 1181.807
+
+Slope of the linear model = exponent = 1.5152
+
+My values round to the same values as those found by the authors for dsDNA viruses (1.52 and 1182).
+My values are both different to those the authors found for all viruses overall, however the value for the exponent is within the 95% confidence interval of the author's value, and the value of the scaling factor is very close to the boundary of the confidence interval.
+
+d.
+
+Code is also found in r-script for Q5.
+
+ggplot(data = log_transform, aes(x = L_log, y = V_log))+
+  geom_point(size = 2)+
+  geom_smooth(method = "lm", colour = "#3366ff", linewidth = 0.7, se = TRUE)+
+  theme_bw()+
+  xlab("log [Genome length (kb)]")+
+  ylab("log [Virion volume (nm3)]")
+
+Copy of my figure:
+
+![image](https://github.com/1063037/reproducible-research_homework/assets/150165336/30a748f3-15b4-437f-97f2-d0d3f72bb08d)
+
+e.
+A 300 kb dsDNA virus:
+V = 1181.807*300^1.5152
+V = 6697005.925 nm^3
 
 
 
