@@ -2,7 +2,8 @@
 
 ## Answers
 ### Q1, 2, 3
-link
+
+https://github.com/1063037/logistic_growth
 
 ### Q4
 a.
