@@ -19,6 +19,15 @@ See "random_walk.R" in "question-4-code" folder
 
 d.
 
+Could not fit the entire edit in one screenshot so it is in two images:
+
+![image](https://github.com/1063037/reproducible-research_homework/assets/150165336/69b0f180-f464-4c98-af1e-59c9f05d5bc7)
+
+![image](https://github.com/1063037/reproducible-research_homework/assets/150165336/6435a092-9139-4eae-9283-53dff347095b)
+
+
+### Q5
+
 
 
 
