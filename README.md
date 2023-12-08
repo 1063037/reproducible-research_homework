@@ -57,8 +57,6 @@ My values are both different to those the authors found for all viruses overall,
 
 d.
 
-Code is also found in r-script for Q5.
-
 ggplot(data = log_transform, aes(x = L_log, y = V_log))+
   geom_point(size = 2)+
   geom_smooth(method = "lm", colour = "#3366ff", linewidth = 0.7, se = TRUE)+
